@@ -1,0 +1,48 @@
+body {
+    font-family: sans-serif;
+}
+h3 {
+    margin-top: 0;
+}
+main {
+    width: 1280px;
+    margin: 0 auto;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.key1 {
+    width: 40px;
+    height: 45px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 4px;
+    margin-right: 2px;
+}
+
+.key1:hover {
+    background-color: #ccc;
+}
+.key1 span {
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.gap-1 {
+    width: 40px;
+    height: 45px;
+}
+
+.gap-half {
+    width: 20px;
+    height: 45px;
+}
