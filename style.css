@@ -26,10 +26,16 @@ main {
     border-color: black;
     border-radius: 4px;
     margin-right: 2px;
+    cursor: pointer;
 }
 
 .key1:hover {
     background-color: #ccc;
+}
+
+.selected {
+    border-color: lightblue;
+    background-color: lightgray;
 }
 .key1 span {
     margin-top: 10px;
