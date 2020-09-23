@@ -29,7 +29,7 @@ function startup() {
 }
 
 
-const keys = document.querySelectorAll('.key1');
+const keys = document.querySelectorAll('.key');
 
 for (const key of keys) {
   key.addEventListener('click', function() {

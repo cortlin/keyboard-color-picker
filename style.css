@@ -8,19 +8,20 @@ main {
     width: 1280px;
     margin: 0 auto;
 }
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mt-2 {
+    margin-top: 2px;
 }
 
 .row {
     display: flex;
     flex-direction: row;
 }
-.key1 {
-    width: 40px;
-    height: 45px;
+.key {
     border-style: solid;
     border-width: 1px;
     border-color: black;
@@ -29,16 +30,37 @@ main {
     cursor: pointer;
 }
 
-.key1:hover {
+.key:hover {
     background-color: #ccc;
+}
+
+.key1 {
+    width: 40px;
+    height: 45px;
+}
+
+.key2 {
+    width: 85px;
+    height: 45px;
+}
+
+.key1\.25 {
+    width: 52px;
+    height: 45px;
+}
+
+.key1\.5 {
+    width: 62px;
+    height: 45px;
 }
 
 .selected {
     border-color: lightblue;
     background-color: lightgray;
 }
-.key1 span {
-    margin-top: 10px;
+.key span {
+    display: block;
+    margin-top: 5px;
     margin-left: 5px;
     font-size: 12px;
 }
@@ -46,9 +68,11 @@ main {
 .gap-1 {
     width: 40px;
     height: 45px;
+    margin-right: 3px;
 }
 
 .gap-half {
     width: 20px;
     height: 45px;
+    margin-right: 3px;
 }
