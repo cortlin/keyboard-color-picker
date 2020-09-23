@@ -2,39 +2,34 @@ console.log("It WOrks!");
 
 let colorChange;
 const defaultColor = "#2fdaa7";
+let recentColors = [];
 
-window.addEventListener("load", startup, false);
 
-function startup() {
-  colorChange = document.querySelector("#picker");
-  colorChange.value = defaultColor;
-  colorChange.addEventListener("input", updateFirst, false);
-  colorChange.addEventListener("change", updateAll, false);
-  colorChange.select();
+colorChange = document.querySelector("#picker");
+colorChange.value = defaultColor;
 
-  function updateFirst(event) {
-    var p = document.querySelector(".selected");
-
-    if (p) {
-      p.style.backgroundColor = event.target.value;
-    }
+const updateAll = (event) => {
+  document.querySelectorAll(".selected").forEach((p) => {
+    p.style.backgroundColor = event.target.value;
+    p.classList.remove('selected');
+  });
+  recentColors.unshift(event.target.value);
+  if (recentColors.length > 5) {
+    recentColors.pop();
   }
-
-  function updateAll(event) {
-    document.querySelectorAll(".selected").forEach(function (p) {
-      p.style.backgroundColor = event.target.value;
-      p.classList.remove('selected');
-    });
-  }
+  console.log(recentColors)
+  
 }
+
+
+colorChange.addEventListener("change", updateAll, false);
+
 
 
 const keys = document.querySelectorAll('.key');
 
 for (const key of keys) {
-  key.addEventListener('click', function() {
-    this.classList.add('selected');
-  })
+  key.addEventListener('click', () => key.classList.toggle('selected'))
 }
 
 
