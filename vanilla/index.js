@@ -5,7 +5,7 @@ const defaultColor = "#2fdaa7";
 let recentColors = [];
 
 
-colorChange = document.querySelector("#picker");
+colorChange = document.querySelector("#key-color");
 colorChange.value = defaultColor;
 
 const updateAll = (event) => {

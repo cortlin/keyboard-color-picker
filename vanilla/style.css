@@ -30,12 +30,11 @@ main, header {
     
 }
 
-.keyboard {
-
-}
-
 .mb-20 {
     margin-bottom: 20px;
+}
+.mr-10 {
+    margin-right: 10px;
 }
 
 .mt-2 {
@@ -103,4 +102,22 @@ main, header {
     width: 20px;
     height: 45px;
     margin-right: 3px;
+}
+
+.colors-form {
+    display: flex;
+    align-items: center;
+}
+
+input[type=color] {
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #252525;
+}
+
+input[type=color]:focus {
+    border: none;
+    outline: none;
 }
