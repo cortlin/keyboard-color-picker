@@ -1,13 +1,36 @@
 body {
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-weight: 500;
+    color: #eee;
+    background-color: #252525;
 }
 h3 {
     margin-top: 0;
 }
-main {
-    width: 1280px;
+main, header {
+    width: 80%;
     margin: 0 auto;
+}
+
+.desk-mat {
+    display: flex;
+    background: rgb(27,1,52);
+    background: linear-gradient(145deg, 
+            rgba(27,1,52,1) 0%,
+            rgba(112,23,198,1) 44%,
+            rgba(250,0,255,1) 100%);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 600px;
+    border-radius: 15px;
+    box-shadow: 3px 6px 15px rgba(0, 0, 0, .4);
+    
+}
+
+.keyboard {
+
 }
 
 .mb-20 {
@@ -23,10 +46,12 @@ main {
     flex-direction: row;
 }
 .key {
+    color: #111;
     border-style: solid;
     border-width: 1px;
     border-color: black;
     border-radius: 4px;
+    background-color: #fff;
     margin-right: 2px;
     cursor: pointer;
 }
