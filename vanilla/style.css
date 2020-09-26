@@ -40,12 +40,16 @@ main, header {
 .mt-2 {
     margin-top: 2px;
 }
+.mt-20 {
+    margin-top: 20px;
+}
 
 .row {
     display: flex;
     flex-direction: row;
 }
 .key {
+    box-sizing: border-box;
     color: #111;
     border-style: solid;
     border-width: 1px;
@@ -54,6 +58,7 @@ main, header {
     background-color: #fff;
     margin-right: 2px;
     cursor: pointer;
+    height: 55px
 }
 
 .key:hover {
@@ -61,23 +66,38 @@ main, header {
 }
 
 .key1 {
-    width: 40px;
-    height: 45px;
+    width: 50px;
 }
 
 .key2 {
-    width: 85px;
-    height: 45px;
+    width: calc((50px *2) + 2px);
 }
 
 .key1\.25 {
-    width: 52px;
-    height: 45px;
+    width: calc((50px * 1.25) + .5px);
 }
 
 .key1\.5 {
-    width: 62px;
-    height: 45px;
+    width: calc((50px * 1.5) + 1px);
+}
+
+.key1\.75 {
+    width: calc((50px * 1.75) + 1.5px);
+}
+
+.key2\.25 {
+    width: calc((50px * 2.25) + 2.5px);
+}
+
+.key2\.5 {
+    width: calc((50px * 2.5) + 3px);
+}
+
+.key2\.75 {
+    width: calc((50px * 2.75) + 3.5px)
+}
+.key6\.25 {
+    width: calc((50px * 6.25) + 10.5px)
 }
 
 .selected {
@@ -93,15 +113,13 @@ main, header {
 }
 
 .gap-1 {
-    width: 40px;
-    height: 45px;
-    margin-right: 3px;
+    width: 52px;
+    height: 55px;
 }
 
 .gap-half {
-    width: 20px;
-    height: 45px;
-    margin-right: 3px;
+    width: 26px;
+    height: 55px;
 }
 
 .colors-form {
