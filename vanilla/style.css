@@ -3,31 +3,62 @@ body {
     font-weight: 500;
     color: #eee;
     background-color: #252525;
+    margin: 0;
 }
 h3 {
     margin-top: 0;
 }
-main, header {
-    width: 80%;
-    max-width: 1280px;
-    margin: 0 auto;
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: 80px 1fr;
 }
 
+header {
+    padding-left: 40px;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+
+
+    background-color: #151515;
+}
+
+main {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+
+    background-color: #252525;
+}
+
+aside {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: #1d1d1d;
+    height: calc(100vh - 80px);
+}
 .desk-mat {
     display: flex;
-    background: rgb(27,1,52);
+    /* background: rgb(27,1,52);
     background: linear-gradient(145deg, 
             rgba(27,1,52,1) 0%,
             rgba(112,23,198,1) 44%,
-            rgba(250,0,255,1) 100%);
+            rgba(250,0,255,1) 100%); */
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     height: 600px;
     border-radius: 15px;
-    box-shadow: 3px 6px 15px rgba(0, 0, 0, .4);
+    /*box-shadow: 3px 6px 15px rgba(0, 0, 0, .4);*/
     
+}
+
+.m-20 {
+    margin: 20px;
 }
 
 .mb-20 {
@@ -128,14 +159,44 @@ main, header {
 }
 
 input[type=color] {
-    width: 30px;
+    width: 80%;
     height: 30px;
     border: none;
     cursor: pointer;
-    background-color: #252525;
+    background-color: #1d1d1d;
 }
 
 input[type=color]:focus {
     border: none;
     outline: none;
+}
+
+label {
+    font-size: 14px;
+}
+.button-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+    background-color: #484848;
+    border-radius: 7px;
+    margin-right: 5px;
+    width: 33%;
+    height: 55px;
+}
+
+.button-group .button:last-child {
+    margin-right: 0;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+hr {
+    border: 1px solid #252525;
 }

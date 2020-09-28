@@ -10,156 +10,170 @@
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <h1>Keyboard Color Picker</h1>
-    </div>
-  </header>
-
-  <main>
-    <div class="container">
-      <div class="controls mb-20">
-        <h3>Select your colors</h3>
-        <form class='colors-form'>
-          <label for="key-color">Key cap color: </label>
-          <input class="mr-10" type="color" name="key-color" id="key-color">
-          <label for="key-color">Key character color: </label>
-          <input class="mr-10" type="color" name="key-char-color" id="key-char-color">
-        </form>
+  <div class="main-grid">
+    <header>
+      <div class="container">
+        <h2>_DahKeyz</h2>
       </div>
-      <div class="desk-mat">
-        <div class="keyboard">
-          <div class="row">
-            <div class="key key1"><span>Esc</span></div>
+    </header>
 
-            <div class="gap-1"></div>
+    <main>
+      <div class="container">
+        <div class="desk-mat">
+          <div class="keyboard">
+            <div class="row">
+              <div class="key key1"><span>Esc</span></div>
 
-            <div class="key key1"><span>F2</span></div>
-            <div class="key key1"><span>F3</span></div>
-            <div class="key key1"><span>F1</span></div>
-            <div class="key key1"><span>F4</span></div>
+              <div class="gap-1"></div>
 
-            <div class="gap-half"></div>
+              <div class="key key1"><span>F2</span></div>
+              <div class="key key1"><span>F3</span></div>
+              <div class="key key1"><span>F1</span></div>
+              <div class="key key1"><span>F4</span></div>
 
-            <div class="key key1"><span>F5</span></div>
-            <div class="key key1"><span>F6</span></div>
-            <div class="key key1"><span>F7</span></div>
-            <div class="key key1"><span>F8</span></div>
+              <div class="gap-half"></div>
 
-            <div class="gap-half"></div>
+              <div class="key key1"><span>F5</span></div>
+              <div class="key key1"><span>F6</span></div>
+              <div class="key key1"><span>F7</span></div>
+              <div class="key key1"><span>F8</span></div>
 
-            <div class="key key1"><span>F9</span></div>
-            <div class="key key1"><span>F10</span></div>
-            <div class="key key1"><span>F11</span></div>
-            <div class="key key1"><span>F12</span></div>
+              <div class="gap-half"></div>
 
-            <div class="gap-half"></div>
+              <div class="key key1"><span>F9</span></div>
+              <div class="key key1"><span>F10</span></div>
+              <div class="key key1"><span>F11</span></div>
+              <div class="key key1"><span>F12</span></div>
 
-            <div class="key key1"><span>PrtSc</span></div>
-            <div class="key key1"><span>Scroll Lock</span></div>
-            <div class="key key1"><span>Pause</span></div>
-          </div>
+              <div class="gap-half"></div>
 
-          <div class="row mt-20">
-            <div class="key key1"><span>~ <br> `</span></div>
-            <div class="key key1"><span>1</span></div>
-            <div class="key key1"><span>2</span></div>
-            <div class="key key1"><span>3</span></div>
-            <div class="key key1"><span>4</span></div>
-            <div class="key key1"><span>5</span></div>
-            <div class="key key1"><span>6</span></div>
-            <div class="key key1"><span>7</span></div>
-            <div class="key key1"><span>8</span></div>
-            <div class="key key1"><span>9</span></div>
-            <div class="key key1"><span>0</span></div>
-            <div class="key key1"><span>-</span></div>
-            <div class="key key1"><span>=</span></div>
-            <div class="key key2"><span>Backspace</span></div>
-
-            <div class="gap-half"></div>
-            <div class="key key1"><span>Insert</span></div>
-            <div class="key key1"><span>Home</span></div>
-            <div class="key key1"><span>Page up</span></div>
-          </div>
-
-          <div class="row mt-2">
-            <div class="key key1.5"><span>Tab</span></div>
-            <div class="key key1"><span>q</span></div>
-            <div class="key key1"><span>w</span></div>
-            <div class="key key1"><span>e</span></div>
-            <div class="key key1"><span>r</span></div>
-            <div class="key key1"><span>t</span></div>
-            <div class="key key1"><span>y</span></div>
-            <div class="key key1"><span>u</span></div>
-            <div class="key key1"><span>i</span></div>
-            <div class="key key1"><span>o</span></div>
-            <div class="key key1"><span>p</span></div>
-            <div class="key key1"><span>[</span></div>
-            <div class="key key1"><span>]</span></div>
-            <div class="key key1.5"><span>| <br> \</span></div>
-            <div class="gap-half"></div>
-            <div class="key key1"><span>Delete</span></div>
-            <div class="key key1"><span>End</span></div>
-            <div class="key key1"><span>Page Down</span></div>
-          </div>
-
-          <div class="row mt-2">
-            <div class="key key1.75"><span>Caps<br>Lock</span></div>
-            <div class="key key1"><span>a</span></div>
-            <div class="key key1"><span>s</span></div>
-            <div class="key key1"><span>d</span></div>
-            <div class="key key1"><span>f</span></div>
-            <div class="key key1"><span>g</span></div>
-            <div class="key key1"><span>h</span></div>
-            <div class="key key1"><span>j</span></div>
-            <div class="key key1"><span>k</span></div>
-            <div class="key key1"><span>l</span></div>
-            <div class="key key1"><span>;</span></div>
-            <div class="key key1"><span>'</span></div>
-            <div class="key key2.25"><span>Enter</span></div>
-          </div>
-
-          <div class="row mt-2">
-            <div class="key key2.25"><span>Shift</span></div>
-            <div class="key key1"><span>z</span></div>
-            <div class="key key1"><span>x</span></div>
-            <div class="key key1"><span>c</span></div>
-            <div class="key key1"><span>v</span></div>
-            <div class="key key1"><span>b</span></div>
-            <div class="key key1"><span>n</span></div>
-            <div class="key key1"><span>m</span></div>
-            <div class="key key1"><span>
-                <<br>,
-              </span></div>
-            <div class="key key1"><span>><br>.</span></div>
-            <div class="key key1"><span>?<br>/</span></div>
-            <div class="key key2.75"><span>Shift</span></div>
-            <div class="gap-half"></div>
-            <div class="gap-1"></div>
-            <div class="key key1">
-              <span>Up</span>
+              <div class="key key1"><span>PrtSc</span></div>
+              <div class="key key1"><span>Scroll Lock</span></div>
+              <div class="key key1"><span>Pause</span></div>
             </div>
-          </div>
 
-          <div class="row mt-2">
-            <div class="key key1.25"><span>Control</span></div>
-            <div class="key key1.25"><span>Super</span></div>
-            <div class="key key1.25"><span>Alt</span></div>
-            <div class="key key6.25"><span>Space</span></div>
-            <div class="key key1.25"><span>Alt</span></div>
-            <div class="key key1.25"><span>Super</span></div>
-            <div class="key key1.25"><span>Fn</span></div>
-            <div class="key key1.25"><span>Control</span></div>
-            <div class="gap-half"></div>
-            <div class="key key1"><span>Left</span></div>
-            <div class="key key1"><span>Down</span></div>
-            <div class="key key1"><span>Right</span></div>
+            <div class="row mt-20">
+              <div class="key key1"><span>~ <br> `</span></div>
+              <div class="key key1"><span>1</span></div>
+              <div class="key key1"><span>2</span></div>
+              <div class="key key1"><span>3</span></div>
+              <div class="key key1"><span>4</span></div>
+              <div class="key key1"><span>5</span></div>
+              <div class="key key1"><span>6</span></div>
+              <div class="key key1"><span>7</span></div>
+              <div class="key key1"><span>8</span></div>
+              <div class="key key1"><span>9</span></div>
+              <div class="key key1"><span>0</span></div>
+              <div class="key key1"><span>-</span></div>
+              <div class="key key1"><span>=</span></div>
+              <div class="key key2"><span>Backspace</span></div>
+
+              <div class="gap-half"></div>
+              <div class="key key1"><span>Insert</span></div>
+              <div class="key key1"><span>Home</span></div>
+              <div class="key key1"><span>Page up</span></div>
+            </div>
+
+            <div class="row mt-2">
+              <div class="key key1.5"><span>Tab</span></div>
+              <div class="key key1"><span>q</span></div>
+              <div class="key key1"><span>w</span></div>
+              <div class="key key1"><span>e</span></div>
+              <div class="key key1"><span>r</span></div>
+              <div class="key key1"><span>t</span></div>
+              <div class="key key1"><span>y</span></div>
+              <div class="key key1"><span>u</span></div>
+              <div class="key key1"><span>i</span></div>
+              <div class="key key1"><span>o</span></div>
+              <div class="key key1"><span>p</span></div>
+              <div class="key key1"><span>[</span></div>
+              <div class="key key1"><span>]</span></div>
+              <div class="key key1.5"><span>| <br> \</span></div>
+              <div class="gap-half"></div>
+              <div class="key key1"><span>Delete</span></div>
+              <div class="key key1"><span>End</span></div>
+              <div class="key key1"><span>Page Down</span></div>
+            </div>
+
+            <div class="row mt-2">
+              <div class="key key1.75"><span>Caps<br>Lock</span></div>
+              <div class="key key1"><span>a</span></div>
+              <div class="key key1"><span>s</span></div>
+              <div class="key key1"><span>d</span></div>
+              <div class="key key1"><span>f</span></div>
+              <div class="key key1"><span>g</span></div>
+              <div class="key key1"><span>h</span></div>
+              <div class="key key1"><span>j</span></div>
+              <div class="key key1"><span>k</span></div>
+              <div class="key key1"><span>l</span></div>
+              <div class="key key1"><span>;</span></div>
+              <div class="key key1"><span>'</span></div>
+              <div class="key key2.25"><span>Enter</span></div>
+            </div>
+
+            <div class="row mt-2">
+              <div class="key key2.25"><span>Shift</span></div>
+              <div class="key key1"><span>z</span></div>
+              <div class="key key1"><span>x</span></div>
+              <div class="key key1"><span>c</span></div>
+              <div class="key key1"><span>v</span></div>
+              <div class="key key1"><span>b</span></div>
+              <div class="key key1"><span>n</span></div>
+              <div class="key key1"><span>m</span></div>
+              <div class="key key1"><span>&lt;<br>,</span></div>
+              <div class="key key1"><span>&gt;<br>.</span></div>
+              <div class="key key1"><span>?<br>/</span></div>
+              <div class="key key2.75"><span>Shift</span></div>
+              <div class="gap-half"></div>
+              <div class="gap-1"></div>
+              <div class="key key1">
+                <span>Up</span>
+              </div>
+            </div>
+
+            <div class="row mt-2">
+              <div class="key key1.25"><span>Control</span></div>
+              <div class="key key1.25"><span>Super</span></div>
+              <div class="key key1.25"><span>Alt</span></div>
+              <div class="key key6.25"><span>Space</span></div>
+              <div class="key key1.25"><span>Alt</span></div>
+              <div class="key key1.25"><span>Super</span></div>
+              <div class="key key1.25"><span>Fn</span></div>
+              <div class="key key1.25"><span>Control</span></div>
+              <div class="gap-half"></div>
+              <div class="key key1"><span>Left</span></div>
+              <div class="key key1"><span>Down</span></div>
+              <div class="key key1"><span>Right</span></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
+    <aside>
+      <div class="m-20">
+        <div class="button-group">
+          <div class="button">A</div>
+          <div class="button" style="font-size: 12px;">¯\_(ツ)_/¯</div>
+          <div class="button">🍟</div>
+        </div>
+        <h3 class="mt-20">Select your colors</h3>
+        <form class='colors-form'>
+          <div class="form-group">
+            <label for="key-color">Key: </label>
+            <input class="mr-10" type="color" name="key-color" id="key-color">
+          </div>
+          <div class="form-group">
+            <label for="key-color">legend: </label>
+            <input class="mr-10" type="color" name="key-char-color" id="legend-color">
+          </div>
+        </form>
+      </div>
+
+      <hr>
+
+    </aside>
+  </div> <!-- main-grid -->
   <script src="index.js"></script>
 </body>
 
