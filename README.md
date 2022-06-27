@@ -20,3 +20,7 @@ Tool to design keycap sets
 * [ ] Deskmat selection below the keyboards
 * [ ] convert flat keyboard to 3d SVG board
 * [ ] Add multiple keyboard layouts as an option
+
+
+## Link to a neat web keyboard
+https://codepen.io/32bitkid/pen/LKZzMR
